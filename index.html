@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <h3 id="welcomeMessage"></h3>
+    </nav>
+    <main>
+        <div id="boardTitle">
+            <h1>fancyboard</h1>
+            <button id="addListBtn" onclick="addListFn()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+                </svg>   
+                create new list               
+            </button>
+              
+        </div>
+        <div id="boardArea" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <div class="boardList">
+                <h2 id="listName" onclick="listNameEdit(this)">Click here to name the list</h2><button id="addItemBtn" onclick="addItemFn(this)"><svg id="addItemBtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>Add a card</button></div>    
+        </div>
+        <div id="info">
+            <h1>Developed by Hamed Moradi</h1>
+            <a href="https://github.com/hamedmoradidev">GitHub</a>
+            <a href="https://www.linkedin.com/in/hamed-moradi-38420956/">Linkedin</a>
+            <a href="https://instagram.com/hamed.moradi.dev">Instagram</a>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
